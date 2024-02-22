@@ -21,6 +21,40 @@ struct SymbolItem: View {
 public extension View {
     
 
+    @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, color: Color, opacity: Double, rectangleCornerRadius: Double) -> some View {
+        
+        let rows = [
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center)
+        ]
+        
+        self
+            .overlay(
+                
+                LazyHGrid(rows: rows, alignment: .center, spacing: 25, pinnedViews: [], content: {
+                    ForEach(0 ..< 180) { item in
+                        SymbolItem(color: color, symbol: symbol)
+                    }
+                }).rotationEffect(.degrees(-20))
+                    .opacity(opacity)
+            ).clipped()
+            .clipShape(RoundedRectangle(cornerRadius: rectangleCornerRadius))
+        
+    }
+    
     @ViewBuilder func symbolOverlayRectangle(symbol: String, color: Color, opacity: Double) -> some View {
         
         let rows = [
@@ -54,6 +88,108 @@ public extension View {
             .clipShape(Rectangle())
         
     }
+    
+    @ViewBuilder func symbolOverlayCircle(symbol: String, color: Color, opacity: Double) -> some View {
+        
+        let rows = [
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center)
+        ]
+        
+        self
+            .overlay(
+                
+                LazyHGrid(rows: rows, alignment: .center, spacing: 25, pinnedViews: [], content: {
+                    ForEach(0 ..< 180) { item in
+                        SymbolItem(color: color, symbol: symbol)
+                    }
+                }).rotationEffect(.degrees(-20))
+                    .opacity(opacity)
+            ).clipped()
+            .clipShape(Circle())
+        
+    }
+    
+    @ViewBuilder func symbolOverlayCapsule(symbol: String, color: Color, opacity: Double) -> some View {
+        
+        let rows = [
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center)
+        ]
+        
+        self
+            .overlay(
+                
+                LazyHGrid(rows: rows, alignment: .center, spacing: 25, pinnedViews: [], content: {
+                    ForEach(0 ..< 180) { item in
+                        SymbolItem(color: color, symbol: symbol)
+                    }
+                }).rotationEffect(.degrees(-20))
+                    .opacity(opacity)
+            ).clipped()
+            .clipShape(Capsule())
+        
+    }
+    
+    @ViewBuilder func symbolOverlayEllipse(symbol: String, color: Color, opacity: Double) -> some View {
+        
+        let rows = [
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center),
+            GridItem(.fixed(10), spacing: 20, alignment: .center)
+        ]
+        
+        self
+            .overlay(
+                
+                LazyHGrid(rows: rows, alignment: .center, spacing: 25, pinnedViews: [], content: {
+                    ForEach(0 ..< 180) { item in
+                        SymbolItem(color: color, symbol: symbol)
+                    }
+                }).rotationEffect(.degrees(-20))
+                    .opacity(opacity)
+            ).clipped()
+            .clipShape(Ellipse())
+        
+    }   
     
 }
 
