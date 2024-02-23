@@ -48,7 +48,7 @@ public extension View {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol)
                     }
-                }).rotationEffect(.degrees(-20))
+                }).rotationEffect(.degrees(rotation))
                     .opacity(opacity)
             ).clipped()
             .clipShape(RoundedRectangle(cornerRadius: rectangleCornerRadius))
