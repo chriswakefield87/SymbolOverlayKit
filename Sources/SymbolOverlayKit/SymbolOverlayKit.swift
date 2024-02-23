@@ -22,7 +22,7 @@ struct SymbolItem: View {
 @available(iOS 14.0, macOS 11.0, *)
 public extension View {
     
-    @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double, vspacing: CGFloat, hspacing: CGFloat, rectangleCornerRadius: Double) -> some View {
+    @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double = -20, vspacing: CGFloat = 20, hspacing: CGFloat = 10, rectangleCornerRadius: Double) -> some View {
         var rows: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: vspacing, alignment: .center), count: 15) }
         
         self
@@ -39,7 +39,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double, vspacing: CGFloat, hspacing: CGFloat) -> some View {
+    @ViewBuilder func symbolOverlayRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double = -20, vspacing: CGFloat = 20, hspacing: CGFloat = 10) -> some View {
         var rows: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: vspacing, alignment: .center), count: 15) }
         
         self
@@ -56,7 +56,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayCircle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double, vspacing: CGFloat, hspacing: CGFloat) -> some View {
+    @ViewBuilder func symbolOverlayCircle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double = -20, vspacing: CGFloat = 20, hspacing: CGFloat = 10) -> some View {
         var rows: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: vspacing, alignment: .center), count: 15) }
         
         self
@@ -73,7 +73,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayCapsule(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double, vspacing: CGFloat, hspacing: CGFloat) -> some View {
+    @ViewBuilder func symbolOverlayCapsule(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double = -20, vspacing: CGFloat = 20, hspacing: CGFloat = 10) -> some View {
         var rows: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: vspacing, alignment: .center), count: 15) }
         
         self
@@ -90,7 +90,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayEllipse(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double, vspacing: CGFloat, hspacing: CGFloat) -> some View {
+    @ViewBuilder func symbolOverlayEllipse(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double = -20, vspacing: CGFloat = 20, hspacing: CGFloat = 10) -> some View {
         var rows: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: vspacing, alignment: .center), count: 15) }
         
         self
