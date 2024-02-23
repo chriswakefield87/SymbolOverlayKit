@@ -67,3 +67,15 @@ Capsule()
 Ellipse()
     .symbolOverlayEllipse(symbol: "crown.fill", size: 25, color: .blue, opacity: 0.2, rotation: -10, vspacing: 20, hspacing: 15)
 ```
+
+### Parameters
+
+| parameter          | type           | description                                              | required                       | default                                                                 
+| ------------------ | -------------- | -------------------------------------------------------- | ------------------------------ | --------------
+| symbol             | String         | the string name of the SF symbol to use in the overlay   | Y                              | NA
+| size               | CGFloat        | font size of the symbol                                  | Y                              | NA                                                              
+| color              | Color          | color of the symbol                                      | Y                              | NA
+| opacity            | Double         | opacity of the symbol color                              | Y                              | NA
+| rotation           | Double         | rotation amount of the overlay                           | N                              | -20
+| vspacing           | CGFloat        | vertical spacing between symbol rows                     | N                              | 20                                                           
+| hspacing           | CGFloat        | horizontal spacing between symbol columns                | N                              | 10                                                               
