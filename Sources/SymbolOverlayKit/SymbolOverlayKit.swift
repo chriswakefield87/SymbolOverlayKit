@@ -17,29 +17,28 @@ struct SymbolItem: View {
     }
 }
 
+let rows = [
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center),
+    GridItem(.fixed(10), spacing: 20, alignment: .center)
+]
+
 @available(iOS 14.0, macOS 11.0, *)
 public extension View {
     
-
     @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, color: Color, opacity: Double, rectangleCornerRadius: Double) -> some View {
-        
-        let rows = [
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center)
-        ]
         
         self
             .overlay(
@@ -56,24 +55,6 @@ public extension View {
     }
     
     @ViewBuilder func symbolOverlayRectangle(symbol: String, color: Color, opacity: Double) -> some View {
-        
-        let rows = [
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center)
-        ]
         
         self
             .overlay(
