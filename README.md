@@ -4,6 +4,13 @@
 
 ### Customisable Symbol Shape Overlays in native SwiftUI
 
+<p align="left">
+  <img src="./Screenshots/roundedrectangle.png" width="250" />
+  <img src="./Screenshots/circle.png" width="150"/>
+  <img src="./Screenshots/rectangle.png" width="250" />
+  <img src="./Screenshots/capsule.png" width="250" />
+</p>
+
 ## 🔍 Overview
 
 This is an open-source library to use with SwiftUI. It allows you to create and customize symbol overlays for the native built-in SwiftUI shapes.
