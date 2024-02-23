@@ -65,7 +65,7 @@ public extension View {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol, size: size)
                     }
-                }).rotationEffect(.degrees(-20))
+                }).rotationEffect(.degrees(rotation))
                     .opacity(opacity)
             ).clipped()
             .clipShape(Rectangle())
@@ -81,7 +81,7 @@ public extension View {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol, size: size)
                     }
-                }).rotationEffect(.degrees(-20))
+                }).rotationEffect(.degrees(rotation))
                     .opacity(opacity)
             ).clipped()
             .clipShape(Circle())
@@ -97,7 +97,7 @@ public extension View {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol, size: size)
                     }
-                }).rotationEffect(.degrees(-20))
+                }).rotationEffect(.degrees(rotation))
                     .opacity(opacity)
             ).clipped()
             .clipShape(Capsule())
@@ -113,7 +113,7 @@ public extension View {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol, size: size)
                     }
-                }).rotationEffect(.degrees(-20))
+                }).rotationEffect(.degrees(rotation))
                     .opacity(opacity)
             ).clipped()
             .clipShape(Ellipse())
