@@ -37,6 +37,8 @@ let rows = [
     GridItem(.fixed(10), spacing: 20, alignment: .center)
 ]
 
+var columns: [GridItem] { Array(repeating: GridItem(spacing: 10), count: 15) }
+
 @available(iOS 14.0, macOS 11.0, *)
 public extension View {
     
@@ -45,7 +47,7 @@ public extension View {
         self
             .overlay(
                 
-                LazyHGrid(rows: rows, alignment: .center, spacing: 25, pinnedViews: [], content: {
+                LazyHGrid(rows: columns, alignment: .center, spacing: 25, pinnedViews: [], content: {
                     ForEach(0 ..< 180) { item in
                         SymbolItem(color: color, symbol: symbol, size: size)
                     }
