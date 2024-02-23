@@ -37,7 +37,7 @@ let rows = [
     GridItem(.fixed(10), spacing: 20, alignment: .center)
 ]
 
-var columns: [GridItem] { Array(repeating: GridItem(spacing: 10), count: 15) }
+var columns: [GridItem] { Array(repeating: GridItem(.fixed(10), spacing: 20, alignment: .center), count: 15) }
 
 @available(iOS 14.0, macOS 11.0, *)
 public extension View {
