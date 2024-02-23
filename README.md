@@ -19,6 +19,19 @@ This is an open-source library to use with SwiftUI. It allows you to create and 
 - Full customisation of colors, angles, overlay spacing, symbol size.
 - Support for all out-of-the-box SF Symbols.
 
+## 🧭 Navigation
+
+- [💻 Installation](#-installation)
+  - [Swift Package Manager](#swift-package-manager)
+- [🧳 Requirements](#-requirements)
+- [🛠 Usage](#-usage)
+  - [Parameters](#parameters)
+  - [Examples](#examples)
+- [👨‍💻 Contributors](#-contributors)
+- [✍️ Author](#-author)
+- [📃 License](#-license)
+- [📦 Projects](#-projects)
+
 ---
 
 ## 💻 Installation
@@ -87,7 +100,7 @@ Ellipse()
 
 ---
 
-## 📱 Examples
+### Examples
 
 #### Circle (With optional spacing parameters)
 
