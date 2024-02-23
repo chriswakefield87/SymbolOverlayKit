@@ -56,7 +56,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double) -> some View {
+    @ViewBuilder func symbolOverlayRectangle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double) -> some View {
         
         self
             .overlay(
@@ -72,7 +72,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayCircle(symbol: String, size: CGFloat, color: Color, opacity: Double) -> some View {
+    @ViewBuilder func symbolOverlayCircle(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double) -> some View {
         
         self
             .overlay(
@@ -88,7 +88,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayCapsule(symbol: String, size: CGFloat, color: Color, opacity: Double) -> some View {
+    @ViewBuilder func symbolOverlayCapsule(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double) -> some View {
         
         self
             .overlay(
@@ -104,7 +104,7 @@ public extension View {
         
     }
     
-    @ViewBuilder func symbolOverlayEllipse(symbol: String, size: CGFloat, color: Color, opacity: Double) -> some View {
+    @ViewBuilder func symbolOverlayEllipse(symbol: String, size: CGFloat, color: Color, opacity: Double, rotation: Double) -> some View {
         
         self
             .overlay(
