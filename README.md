@@ -38,6 +38,8 @@ https://github.com/chriswakefield87/SymbolOverlayKit.git, :branch="main"
 - iOS 14.0+ | macOS 11+
 - Swift 5+
 
+---
+
 ## 🛠 Usage
 
 First, add `import SymbolOverlayKit` on every `swift` file you would like to use `SymbolOverlayKit`. Then, you can add the overlay modifer to a shape as follows:
@@ -67,6 +69,8 @@ Capsule()
 Ellipse()
     .symbolOverlayEllipse(symbol: "crown.fill", size: 25, color: .blue, opacity: 0.2, rotation: -10, vspacing: 20, hspacing: 15)
 ```
+
+---
 
 ### Parameters
 
