@@ -12,8 +12,9 @@ struct SymbolItem: View {
   
   var body: some View {
       Image(systemName: symbol)
-      .frame(width: 10, height: 10, alignment: .center)
-      .foregroundColor(color)
+          .font(.system(size: 22))
+//          .frame(width: 10, height: 10, alignment: .center)
+          .foregroundColor(color)
     }
 }
 
@@ -38,7 +39,7 @@ let rows = [
 @available(iOS 14.0, macOS 11.0, *)
 public extension View {
     
-    @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, color: Color, opacity: Double, rectangleCornerRadius: Double) -> some View {
+    @ViewBuilder func symbolOverlayRoundedRectangle(symbol: String, color: Color, opacity: Double, rotation: Double, rectangleCornerRadius: Double) -> some View {
         
         self
             .overlay(
@@ -72,24 +73,6 @@ public extension View {
     
     @ViewBuilder func symbolOverlayCircle(symbol: String, color: Color, opacity: Double) -> some View {
         
-        let rows = [
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center)
-        ]
-        
         self
             .overlay(
                 
@@ -106,24 +89,6 @@ public extension View {
     
     @ViewBuilder func symbolOverlayCapsule(symbol: String, color: Color, opacity: Double) -> some View {
         
-        let rows = [
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center)
-        ]
-        
         self
             .overlay(
                 
@@ -139,24 +104,6 @@ public extension View {
     }
     
     @ViewBuilder func symbolOverlayEllipse(symbol: String, color: Color, opacity: Double) -> some View {
-        
-        let rows = [
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center),
-            GridItem(.fixed(10), spacing: 20, alignment: .center)
-        ]
         
         self
             .overlay(
