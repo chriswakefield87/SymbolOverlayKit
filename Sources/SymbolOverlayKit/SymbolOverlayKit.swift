@@ -13,7 +13,7 @@ struct SymbolItem: View {
   
   var body: some View {
       Image(systemName: symbol)
-          .font(.system(size: 15))
+          .font(.system(size: size))
 //          .frame(width: 10, height: 10, alignment: .center)
           .foregroundColor(color)
     }
